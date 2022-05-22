@@ -1,0 +1,277 @@
+body {
+  background: linear-gradient(135deg, #253b2d 0%, #568cad 53%, #1f356b 100%);
+  cursor: pointer;
+}
+body canvas {
+  position: fixed;
+  z-index: 100;
+}
+body .land {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+}
+body .mountain-1 {
+  width: 140px;
+  height: 150px;
+  background-color: #adadad;
+  position: absolute;
+  bottom: 110px;
+  left: 60px;
+  transform: rotate(45deg) skewY(10deg);
+}
+body .mountain-2 {
+  width: 210px;
+  height: 220px;
+  background-color: #9c9c9c;
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  transform: rotate(45deg) skewY(0deg);
+}
+body .mountain-3 {
+  width: 140px;
+  height: 150px;
+  background-color: #adadad;
+  position: absolute;
+  bottom: 110px;
+  left: 250px;
+  transform: rotate(45deg) skewY(-10deg);
+}
+body .mountain-4 {
+  width: 140px;
+  height: 150px;
+  background-color: #888;
+  position: absolute;
+  bottom: 100px;
+  left: 350px;
+  transform: rotate(45deg) skewY(-11deg);
+}
+body .tree {
+  position: absolute;
+  bottom: 130px;
+  left: 500px;
+  width: 50px;
+  height: 100px;
+}
+body .tree .section-1, body .tree .section-2, body .tree .section-3 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 11px 11px 11px;
+  border-color: transparent transparent #2F4F2F transparent;
+  margin-bottom: -4px;
+}
+body .tree .section-2 {
+  border-width: 0 15px 15px 15px;
+  margin-left: -3px;
+  margin-bottom: -5px;
+}
+body .tree .section-3 {
+  border-width: 0 18px 18px 18px;
+  margin-left: -5px;
+  z-index: 15;
+}
+body .tree .wood {
+  width: 8px;
+  height: 7px;
+  margin-left: 8px;
+  margin-top: 3px;
+  background-color: #5C4033;
+  z-index: 1;
+}
+body .tree-2 {
+  left: 70%;
+  bottom: 100px;
+}
+body .tree-3 {
+  left: 76%;
+  bottom: 130px;
+}
+body .tree-4 {
+  left: 80%;
+  bottom: 110px;
+}
+body .tree-5 {
+  left: 78%;
+  bottom: 70px;
+}
+body .tree-6 {
+  left: 86%;
+  bottom: 120px;
+}
+body canvas {
+  width: 100%;
+  height: 100%;
+}
+body .house {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 36%;
+  bottom: 70px;
+  display: block;
+}
+body .house .wall .log {
+  width: 50px;
+  height: 4px;
+  background-color: #5C4033;
+}
+body .house .wall .log-2 {
+  background-color: #7C6053;
+  margin-left: 1px;
+}
+body .house .wall-2 {
+  position: absolute;
+  left: -29px;
+  bottom: 79px;
+  transform: skewY(45deg);
+}
+body .house .wall-2 .log {
+  height: 5px;
+  width: 30px;
+  margin-bottom: -1.2px;
+}
+body .house .roof .roof-1 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 30px 30px 30px 30px;
+  border-color: transparent transparent #7C6053 transparent;
+  position: absolute;
+  top: -60px;
+  left: -5px;
+}
+body .house .roof .roof-2 {
+  width: 42px;
+  height: 38px;
+  background-color: #7C6053;
+  position: absolute;
+  top: -48px;
+  left: -24px;
+  transform: rotate(45deg);
+  border-right: 2px solid #5C4033;
+  border-top: 2px solid #5C4033;
+  border-left: 2px solid #5C4033;
+}
+body .house .roof .chimney {
+  width: 10px;
+  height: 30px;
+  background-color: #5C4033;
+  opacity: 0.9;
+  margin-top: -82px;
+  margin-left: 20px;
+}
+body .house .roof .chimney:before {
+  content: "";
+  width: 6px;
+  height: 30px;
+  background-color: #7C6053;
+  position: absolute;
+  top: -50px;
+  left: 14px;
+  transform: skewY(45deg);
+}
+body .house .roof .chimney:after {
+  content: "";
+  width: 10px;
+  height: 6.7px;
+  background-color: #555;
+  position: absolute;
+  top: -53px;
+  left: 17px;
+  transform: skewX(45deg);
+}
+body .house .roof .smoke {
+  width: 10px;
+  height: 16px;
+  background-color: #887;
+  opacity: 0.5;
+  border-radius: 5px;
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  animation: smoke 3s infinite ease;
+}
+body .house .roof .smoke-2 {
+  background-color: #aaa;
+  animation: smoke-2 2.7s infinite ease-in-out 1s;
+}
+body .house .window {
+  width: 18px;
+  height: 18px;
+  background-color: #FFFFCC;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  border: 2px solid #7C6053;
+  -webkit-box-shadow: 0px 0px 40px 2px #edddad;
+  -moz-box-shadow: 0px 0px 40px 2px #edddad;
+  box-shadow: 0px 0px 40px 2px #edddad;
+}
+body .house .window:before {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #7C6053;
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 0;
+}
+body .house .window:after {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #7C6053;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 48%;
+}
+body .house .light {
+  background-color: #FFFFCC;
+  opacity: 0.3;
+  position: absolute;
+  left: 34px;
+  top: 50px;
+  width: 20px;
+  height: 20px;
+  transform: skew(30deg);
+}
+body .house-2 {
+  left: 24%;
+  bottom: 50px;
+}
+body .house-2 .roof .smoke {
+  animation: smoke 2.5s infinite ease-in-out;
+  background-color: #bbb;
+}
+body .house-2 .roof .smoke-2 {
+  animation: smoke-2 3s infinite ease-in-out 1.5s;
+  background-color: #887;
+}
+
+@keyframes smoke {
+  0% {
+    top: -50px;
+    opacity: 0.7;
+  }
+  100% {
+    top: -90px;
+    opacity: 0.1;
+  }
+}
+@keyframes smoke-2 {
+  0% {
+    top: -50px;
+    opacity: 0.7;
+  }
+  100% {
+    top: -90px;
+    opacity: 0.1;
+  }
+}
